@@ -1,4 +1,4 @@
-import Layout from '../comps/Layout.js'
+import Layout from '../components/Layout.js'
 import Link from 'next/link'
 
 const PostLink = (props) => (
