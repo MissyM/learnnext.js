@@ -1,3 +1,10 @@
+//import Header from '../comps/Header'
+import Layout from '../comps/Layout.js'
 export default () => (
-  <div>This is the about page.</div>
+  <div>
+    <Layout>
+      {/*<Header/>*/}
+       <p>This is the about page.</p>
+    </Layout>
+  </div>
 )
