@@ -13,4 +13,4 @@ const Layout = (props) => (
 </div>
 )
 
-export default  layout
+export default  Layout
