@@ -1,9 +1,21 @@
 import Layout from '../comps/Layout.js'
+import Link from 'next/link'
+
+const PostLink = (props) => (
+  <li>
+     <Link href={`/post?title=${props.title}`/*Este es un query parameter*/}>
+      <a>{props.title}</a>
+     </Link>
+  </li>
+)
 
 export default () => (
-  <div>
-    <Layout>
-    <p>Hola esta es la página principal</p>
-    </Layout>
-  </div>
+  <Layout>
+    <h1>My Blog</h1>
+    <ul>
+      <PostLink title="Hello Next.js"/>
+      <PostLink title="Learn Next.js is awesome"/>
+      <PostLink title="Deploy apps with Zeit"/>
+    </ul>
+  </Layout>
 )
