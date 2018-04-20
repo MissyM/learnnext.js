@@ -5,7 +5,7 @@ import fetch from 'isomorphic-unfetch'
 const Post =  (props) => (
   <Layout>
        <h1>{props.show.name}</h1>
-       
+
   </Layout>
 )
 Post.getInitialProps = async function (context) {
